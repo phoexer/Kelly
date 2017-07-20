@@ -25,9 +25,11 @@ If you need to get in touch with me for any reason you can stalk me on twitter [
 Dillinger is currently extended with the following plugins. Instructions on how to use them in your own application are linked below.
 
 Scripts 
-| Script Name | README |
+
+| Script | README |
 | ------ | ------ |
 | Flatten | [scripts/flatten/README.md] [flatten] |
+| Loosing Money | [scripts/loosing_money/README.md](scripts/loosing_money/README.md)
 
 ### Todos
 
@@ -46,5 +48,5 @@ MIT
 
    [mmusangeya]: <https://mmusangeya.com>
    [twitter]: <https://twitter.com/phoexer>
-   [flatten]: <./scripts/flatten/README.md>
+   [flatten]: <scripts/flatten/README.md>
    
