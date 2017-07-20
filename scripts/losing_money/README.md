@@ -1,4 +1,4 @@
-# Loosing Money
+# Losing Money
 
 Someone on Quora asked the question:
 > Press a button and there is a 99% chance of doubling your money

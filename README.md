@@ -26,7 +26,7 @@ Scripts
 | ------ | ------ |
 | ConvertCSV | [scripts/convertCSV/README.md](scripts/convertCSV/README.md)|
 | Flatten | [scripts/flatten/README.md](scripts/flatten/README.md) |
-| Loosing Money | [scripts/loosing_money/README.md](scripts/loosing_money/README.md)|
+| Losing Money | [scripts/losing_money/README.md](scripts/losing_money/README.md)|
 | Random | [scripts/random/README.md](scripts/random/README.md)|
 | RSS Reader | [scripts/RSS_Reader/README.md](scripts/RSS_Reader/README.md)|
 
