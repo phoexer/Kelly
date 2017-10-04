@@ -1,0 +1,14 @@
+[main]
+source-dir: c:\data\src
+backup-dir: c:\data\bk
+send-no-files-message: true
+
+[email]
+send-to: <comma separated to email addresses>
+send-from: <from email address>
+server-host: <mail server>
+server-post: 587
+mail-user: <mail username>
+mail-password: <mail password>
+files_found_subject: Files awaiting processing
+files_not_found_subject: No files require processing

@@ -29,11 +29,10 @@ Scripts
 | Losing Money | [scripts/losing_money/README.md](scripts/losing_money/README.md)|
 | Random | [scripts/random/README.md](scripts/random/README.md)|
 | RSS Reader | [scripts/RSS_Reader/README.md](scripts/RSS_Reader/README.md)|
+| Mathematics | [scripts/Maths/README.md](scripts/Maths/README.md)|
+| Kyla | [scripts/Kyla/README.md](scripts/kyla/README.md)|
 
 ### Todos
-
- - Add all those bloody scripts to this repo
- - Document them all
  - Rule the world!
 
 License
