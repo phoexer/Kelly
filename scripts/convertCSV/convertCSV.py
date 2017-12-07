@@ -12,7 +12,6 @@ import csv
 import pandas as pd
 import logging
 import string
-import random
 
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
@@ -41,7 +40,7 @@ class AccountImport(object):
             if(l == 2):
                 self.process_header(line)
             elif (l > 5) and (line[0] != "Date"):
-                memo = line[1].strip() + ' ' + ''.join(random.choices(string.ascii_uppercase + string.digits + string.ascii_lowercase, k=8))
+                memo = line[1].strip()
     
                 self.table.loc[self.ind] = self.account_name,line[0].strip(),"",memo,line[4].strip(),line[3].strip()
                 self.ind += 1
@@ -57,3 +56,5 @@ class AccountImport(object):
         
 ai = AccountImport()
 ai.runImport("AccountTransactions.csv","AccountYNAB.csv")
+   
+         
