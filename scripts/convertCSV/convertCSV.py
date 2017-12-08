@@ -1,17 +1,21 @@
-# -*- coding: utf-8 -*-
+#!/usr/bin/env python
 """
-Created on Tue Apr 18 17:57:03 2017
+ConvertCSV
+@author: phoexer
 
-@author: michael
-This script converts my stanchart account statement to YNAB compatible
-format
+This is a lovely little script that converts my stanchart account statement to 
+a YNAB compatible format. 
 
 """
+#%reset -f
 
+import os
+import sys
+import argparse
 import csv
 import pandas as pd
 import logging
-import string
+
 
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
@@ -53,8 +57,24 @@ class AccountImport(object):
         logging.debug(self.table.head())
         self.table.to_csv(filename_out, sep=',')
         
-        
-ai = AccountImport()
-ai.runImport("AccountTransactions.csv","AccountYNAB.csv")
-   
+def main(arguments):
+    parser = argparse.ArgumentParser(
+        description=__doc__,
+        formatter_class=argparse.RawDescriptionHelpFormatter)
+    parser.add_argument('infile', help="Input file, CSV from Standchart please.")
+    parser.add_argument('outfile', help="Output file, name of output file, if it exists it will be overwritten, you were warned")
+
+    args = parser.parse_args(arguments)
+    logging.debug("Lets get this party started.")
+    
+    logging.debug("Input file:" + args.infile)
+    logging.debug("Output file:" + args.outfile)
+    
+    ai = AccountImport()
+    ai.runImport(args.infile, args.outfile)
+
+if __name__ == '__main__':
+    main(sys.argv[1:])
+    #sys.exit(main(sys.argv[1:]))
+    
          
